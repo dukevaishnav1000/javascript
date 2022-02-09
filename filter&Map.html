@@ -1,0 +1,31 @@
+<html>
+    <head>
+<script>
+
+    let fibonacci=[0,1]
+    let fibonacciElement = function(arr){
+        let max=arr[0]
+        arr.forEach((value) => 
+        {
+            if(max<value)
+            max=value;
+        })
+
+        for(let i=2;i<=max;i++)
+        {
+          fibonacci.push(fibonacci[i-1]+fibonacci[i-2])
+        }
+        
+        let newarr=arr.map((value) => {
+            return fibonacci[value]
+        }
+        )
+        console.log(newarr)
+        
+            }
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>

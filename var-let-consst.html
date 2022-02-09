@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        //     var x=10;
+        //     console.log(x);
+        //     {
+        //         var x;
+        //         console.log(x);
+        //     }
+        //     console.log(x);
+        // 
+        let myage=24
+        let maxdiscount=25
+
+        if(myage>18)
+        {
+            let maxdiscount=30
+            if(myage==23)
+            {
+                maxdiscount=80*maxdiscount
+            }
+            else if(myage==24)
+            {
+                maxdiscount=80*maxdiscount
+            }
+            console.log("inner ",maxdiscount);
+
+        }
+
+        console.log("outer ",maxdiscount);
+        </script>
+    </body>
+</html>

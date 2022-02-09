@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script>
+            // let arraycount=(arr,val) =>
+            // {   
+            //     let counterr=0
+            //     for(let i=0;i<arr.length;i++)
+            //     {       if(arr[i]===val)
+            //             counterr++
+            //     }
+            //     console.log(counterr)
+            //         counterr=0
+            //     arr.forEach(element => {
+            //         if(element===val)
+            //         counterr++
+            //     });
+
+            //     console.log(counterr)
+            //     let temp=arr.forEach(element=> {
+            //      if(element===val)
+            //         return element;
+            //     })
+
+
+            //     console.log(temp)
+            // }
+                    let duplicate = 0
+                    let uniqarr=[]
+                        let uniqueValues = function (arr) {
+                            uniqarr.push(arr.filter((element,val) => {
+                                duplicate = 0
+                                arr.forEach((x,value) => {
+                                    if (x=== element && val!==value) 
+                                    {     console.log("found duplicate of "+element)
+                                        duplicate++;
+                                    }
+ 
+                                })
+                              return duplicate===0
+                            })
+                            )
+
+                            
+                        console.log(uniqarr)
+                        }
+
+        </script>
+    </head>
+    <body>
+
+
+    </body>
+</html>

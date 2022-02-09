@@ -1,0 +1,55 @@
+<html>
+<head>
+
+</head>
+<body>
+    
+<script>
+let person={
+    name:'Duke Vaishnav',
+    isGraduated:"Yes",
+    hobbies:['Singing','Dancing','Swimming'],
+    noOfCompaniesApplied:7,
+    xyz : function() {
+        console.log("my name is"+this.name)
+    }
+}
+
+let question={
+    name : "arpit",
+    class : "12th",
+    rollno : 34,
+    randomArray:[20,39,56,19,6,18,22,56,19,34,56,67,78,1,2,11],
+    isPrimeNo : function() {
+        let squareoot
+        let ansarray=[]
+        let flag=0
+        for(x of this.randomArray){
+            squareoot=x
+            if(x>=60)
+            squareoot=Math.ceil(Math.sqrt(x))
+
+                    for(let i=2;i<squareoot;i++)
+                    {   if(x%i===0)
+                        {   console.log(x+" is divisible by "+i)
+                            ansarray.push("NO")
+                            flag=1
+                            break
+                        }
+                    }
+                    if(flag===0)
+                    {
+                        ansarray.push("Yes")
+                    }                   
+                    flag=0
+        }
+        return ansarray
+    }
+}
+
+
+console.log(question.isPrimeNo())
+// console.log(person)
+</script>
+</body>
+</html>
